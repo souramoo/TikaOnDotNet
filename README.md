@@ -6,6 +6,8 @@ This is an example repo to read word documents (e.g. doc, docx) and PDFs using C
 
 This is basically a way to do what GroupDocs.Parser does but without any limitations. It also utilises the latest ikvm-revived to load in all the parsers, etc.
 
+This is similar to https://github.com/KevM/tikaondotnet but this method is more modern, uses much less wrapping code, and works on .NET Core (including .NET 5.0, 6.0 and 7.0).
+
 ## Usage
 
 Download the TikaOffice.jar file (a wrapper jar that drags in all the maven dependencies, and sorts out some referencing to ensure all the parsers get included- this does not happen if using MavenReference).
@@ -69,4 +71,4 @@ This uses IKVM-revived (a JVM for c#) to drag in all of org.apache.tika, compile
 
 ## Repo layout
 
-The src folder contains the java source code for a wrapper piece of code to drag in the bits you need. The example folder has an example of a c# project using this.
+The `java_src/` folder contains the java source code for a wrapper piece of code to drag in the bits you need. The `csharp_usage_example/` folder has an example of a c# project using this.
