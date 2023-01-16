@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <StartupObject>Example.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IKVM.Maven.Sdk" Version="1.3.0-develop0029" />
+
+    <IkvmReference Include="..\TikaOffice.jar">
+      <AssemblyName>Tika</AssemblyName>
+      <AssemblyVersion>2.6.0.0</AssemblyVersion>
+      <AssemblyFileVersion>2.6.0.0</AssemblyFileVersion>
+      <DisableAutoAssemblyName>true</DisableAutoAssemblyName>
+      <DisableAutoAssemblyVersion>true</DisableAutoAssemblyVersion>
+    </IkvmReference>
+  </ItemGroup>
+
+</Project>
